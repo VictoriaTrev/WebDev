@@ -7,7 +7,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 app.use(express.static("artStore"));
 
-mongoose.connect("mongodb://localhost:27017/craftDatabase").then(() => console.log("Mongodb connected"));
+mongoose.connect("mongodb://mongo:27017/craftDatabase").then(() => console.log("Mongodb connected"));
 
 // Databse Details//
 const createItem = new mongoose.Schema({
