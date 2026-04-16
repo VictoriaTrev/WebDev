@@ -24,7 +24,7 @@ const createItem = new mongoose.Schema({
 const item = mongoose.model("newItem", createItem);
 
 
-app.listen(3000, () => {
+app.listen(3000, "0.0.0.0", () => {
     console.log("Listening");
 });
 
